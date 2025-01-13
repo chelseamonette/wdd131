@@ -1,0 +1,101 @@
+*{
+    margin: 0 auto;
+    padding: 5px;
+    font-family: var(--primary-font);
+    box-sizing: border-box;
+}
+:root{
+    --primary-font: "Aref Ruqaa Ink", serif;
+    --primary-color: #7A9376;
+    --secondary-color: #595959;
+    --accent-color1: #FFFFFF;
+    --accent-color2: #E3D5CA;
+}
+.aref-ruqaa-ink-regular {
+    font-family: "Aref Ruqaa Ink", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .aref-ruqaa-ink-bold {
+    font-family: "Aref Ruqaa Ink", serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+header{
+    background-color: var(--secondary-color);
+    color: var(--accent-color2);
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    border: 1px solid var(--accent-color2);
+    margin: 0 auto;
+}
+nav{
+    background-color: var(--primary-color);
+    color: var(--accent-color1);
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 800px;
+}
+nav ul{
+    list-style-type: none;
+}
+nav a{
+    display: block;
+    color: var(--accent-color1);
+    text-align: center;
+    padding: 1rem;
+    text-decoration: none;
+}
+nav a:hover{
+    text-decoration: overline;
+}
+nav ul{
+    display: flex;
+    justify-content: space-around;
+}
+nav ul li{
+    flex: 1 1 100%;
+}
+main{
+    width: 500px;
+       
+}
+h1{
+    background-color: var(--secondary-color);
+    color: var(--accent-color1);
+}
+.card{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(10, min-content);
+ 
+}
+
+.about h1{
+    grid-column: 1 / span 3;
+    grid-row: span 1;
+}
+.about img{
+    grid-column: 3/ span 1;
+    grid-row: 2 / span 2;
+}
+.about p{
+    grid-column: 1;
+    grid-row: 2/ span 2;
+}
+.home h1{
+    grid-column: 1 / span 3;
+    grid-row: 3 / span 1;
+}
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--primary-color);
+    color: var(--accent-color2);
+}
+
