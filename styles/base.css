@@ -6,10 +6,11 @@
 }
 :root{
     --primary-font: "Aref Ruqaa Ink", serif;
-    --primary-color: #7A9376;
-    --secondary-color: #595959;
-    --accent-color1: #FFFFFF;
-    --accent-color2: #E3D5CA;
+    --primary-color: #7D4F50;
+    --secondary-color: #CC8B86;
+    --accent-color1: #D1BE9C;
+    --accent-color2: #F9EAE1;
+    --accent-color3: #AA998F;
 }
 .aref-ruqaa-ink-regular {
     font-family: "Aref Ruqaa Ink", serif;
@@ -24,8 +25,8 @@
   }
   
 header{
-    background-color: var(--secondary-color);
-    color: var(--accent-color2);
+    background-color: var(--primary-color);
+    color: var(--accent-color1);
     align-items: center;
     justify-content: center;
 }
@@ -34,7 +35,7 @@ header h1{
     text-align: center;
 }
 nav{
-    background-color: var(--primary-color);
+    background-color: var(--accent-color3);
     color: var(--accent-color1);
     margin: 0 auto;
 }
@@ -43,7 +44,7 @@ nav ul{
 }
 nav a{
     display: block;
-    color: var(--accent-color1);
+    color: black;
     text-decoration: none;
 }
 nav a:hover{
@@ -120,7 +121,7 @@ section{
 }
 section h2{
     text-align: center;
-    color: var(--accent-color2);
+    color: black;
     background-color: var(--secondary-color);
 }
 h3{
