@@ -60,6 +60,7 @@ nav ul li{
 main{
    display: grid;
    grid-template-columns: auto auto auto;
+   max-width: 1300px;
 }
 section{
     border-style: double;
@@ -76,7 +77,7 @@ section{
     display: grid;
     grid-template-rows: auto auto auto auto auto auto auto;
     grid-template-columns: auto auto auto;
-    column-gap: 0px;
+
 }
 .about h2{
     grid-row: 1 / 2;
