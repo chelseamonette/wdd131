@@ -7,6 +7,8 @@ const deleteButton = document.createElement('button');
 li.textContent = input.value ;
 
 deleteButton.textContent = '❌';
+let del = document.getElementById("close-button");
+console.log(del.ariaLabel);
 
 li.append('deleteButton');
 
