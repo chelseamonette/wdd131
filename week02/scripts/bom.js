@@ -18,7 +18,7 @@ addChapterButton.addEventListener("click", function(){
         const list = document.querySelector('#list');
         //Create a li element that will hold each entries chapter title and 
         // an associted delete button
-        const li = document.createElement('li');
+        const li = document.createElement('ul');
         const deleteButton = document.createElement('button');
 
         // Populate the li element variable's textContent or innerHTML with the input value
