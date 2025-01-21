@@ -5,4 +5,8 @@
     #menu {
 		display: none; /* hide hamburger button */
 	}
+
+    .navigation a{
+        display: flex;
+    }
 }

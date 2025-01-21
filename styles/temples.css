@@ -13,18 +13,31 @@
     font-family: var(--primary-font);
     box-sizing: border-box;
 }
-#menu::before {
+
+#menu{
+    font-size: 1.5rem;
+    color: #000;
+    align-items: center;
+}
+#menu::before{
 	content: "☰";
 }
 
-#menu.open::before {
-	content: "❎";
+#menu.open::before{
+	content: "x";
+}
+.navigation a{
+    display: none;
+}
+.open a{
+    display: block;
 }
 nav{
     display: flex;
     background-color: var(--accent-color3);
     color: var(--accent-color1);
     flex-direction: column;
+    margin: 1rem auto;    
 }
 nav a{
     color: black;
