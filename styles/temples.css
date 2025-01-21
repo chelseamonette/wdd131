@@ -13,6 +13,10 @@
     font-family: var(--primary-font);
     box-sizing: border-box;
 }
+h2{
+    display: grid;
+    place-items: center;
+}
 
 #menu{
     font-size: 1.5rem;
