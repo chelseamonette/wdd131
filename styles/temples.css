@@ -1,0 +1,62 @@
+:root{
+    --primary-font: "Aref Ruqaa Ink", serif;
+    --primary-color: #7D4F50;
+    --secondary-color: #CC8B86;
+    --accent-color1: #D1BE9C;
+    --accent-color2: #F9EAE1;
+    --accent-color3: #AA998F;
+}
+
+*{
+    margin: 0 auto;
+    padding: 5px;
+    font-family: var(--primary-font);
+    box-sizing: border-box;
+}
+#menu::before {
+	content: "☰";
+}
+
+#menu.open::before {
+	content: "❎";
+}
+nav{
+    display: flex;
+    background-color: var(--accent-color3);
+    color: var(--accent-color1);
+    flex-direction: column;
+}
+nav a{
+    color: black;
+}
+
+nav a:hover{
+    text-decoration: overline;
+}
+main{
+   max-width: 1200px;
+   margin: 10px;
+   padding: .5rem;
+}
+.container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    place-items: center;
+}
+figure{
+    display: grid;
+
+}
+
+img{
+    width: 300px;
+    margin: 2rem;
+    padding: 1rem;
+}
+
+
+footer{
+    text-align: center;
+    background-color: var(--primary-color);
+    color: var(--accent-color2);
+}

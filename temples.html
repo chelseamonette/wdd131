@@ -8,9 +8,58 @@
     <meta name="author" content="Chelsea Monette">
     <link rel="stylesheet" href="styles/temples.css">
     <link rel="stylesheet" href="styles/temples-large.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Aref+Ruqaa+Ink:wght@400;700&display=swap" rel="stylesheet">
     <script src="scripts/temples.js" defer></script>
 </head>
 <body>
-    
+    <header>
+        <h1>Temple Picture Album</h1>
+        <button id="menu"></button>
+        <nav class="menu">
+            <a href="" id="home">Home</a>
+            <a href="" id="old">Old</a>
+            <a href="" id="new">New</a>
+            <a href="" id="large">Large</a>
+            <a href="" id="small">Small</a>
+        </nav>
+    </header>
+    <main>
+        <h2 id="pageHeading"></h2>
+        <div class="container">
+            <figure><img src="images/reno_temple.webp" alt="reno temple", loading="lazy">
+                <figcaption>Reno, NV Temple</figcaption>
+            </figure>
+            <figure><img src="images/sacramento_temple_lds.webp" alt="sacramento temple", loading="lazy">
+                <figcaption>Sacramento, CA Temple</figcaption>
+            </figure>
+            <figure><img src="images/Oakland-California-Temple.webp" alt="oakland temple", loading="lazy">
+                <figcaption>Oakland, CA Temple</figcaption>
+            </figure>
+            <figure><img src="images/boise_id_temple.webp" alt="boise temple", loading="lazy">
+                <figcaption>Boise, ID Temple</figcaption>
+            </figure>
+            <figure><img src="images/meridian_id_temple.webp" alt="meridian temple", loading="lazy">
+                <figcaption>Meridian, ID Temple</figcaption>
+            </figure>
+            <figure><img src="images/st_george_temple.webp" alt="st. george temple", loading="lazy">
+                <figcaption>St. George, UT Temple</figcaption>
+            </figure>
+            <figure><img src="images/red_cliffs_temple.webp" alt="red cliffs temple", loading="lazy">
+                <figcaption>Red Cliffs, UT Temple</figcaption>
+            </figure>
+            <figure><img src="images/rexburg_idaho_temple.webp" alt="rexburg temple", loading="lazy">
+                <figcaption>Rexburg, ID Temple</figcaption>
+            </figure>
+            <figure><img src="images/kirtland_temple.webp" alt="kirtland temple", loading="lazy">
+                <figcaption>Kirtland, OH Temple</figcaption>
+            </figure>
+        </div>
+    </main>
+    <footer>
+        <p class="year">&copy;<span id="year"></span> | Chelsea Monette | Nevada</p>
+        <p> Last Modified: <span id="lastModified"></span></p>
+    </footer>
 </body>
 </html>
