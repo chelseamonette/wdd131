@@ -64,6 +64,9 @@ footer{
 .weather div span:last-of-type{
     padding-left: 5px;
 }
-.box img{
+.weather-box img{
     display: flex;
+}
+.weather-box h2 span{
+    display: none;
 }
