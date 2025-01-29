@@ -1,0 +1,55 @@
+:root{
+    --primary-color: green;
+    --secondary-color: orange;
+    --accent-color: white;
+    --main-font: "Cormorant Unicase", serif;
+    --secondary-font: "Cormorant Unicase"; 
+    --border-style-1: 3px solid orange;
+}
+.cormorant-unicase-light {
+    font-family: "Cormorant Unicase", serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  .cormorant-unicase-regular {
+    font-family: "Cormorant Unicase", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .cormorant-unicase-medium {
+    font-family: "Cormorant Unicase", serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+  .cormorant-unicase-semibold {
+    font-family: "Cormorant Unicase", serif;
+    font-weight: 600;
+    font-style: normal;
+  }
+  
+  .cormorant-unicase-bold {
+    font-family: "Cormorant Unicase", serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+*{
+    margin: 0 auto;
+    font-family: var(--main-font);
+    box-sizing: border-box;
+}
+h1{
+    display: flex;
+    justify-content: center;
+    background-color: var(--primary-color);
+    border-bottom: var(--border-style-1);
+    font-family: "Cormorant Unicase", serif;
+    font-weight: 700;
+}
+
+.hero img{
+    width: 100%;
+    height: auto;
+}
