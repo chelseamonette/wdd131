@@ -6,43 +6,13 @@
     --secondary-font: "Cormorant Unicase"; 
     --border-style-1: 3px solid orange;
 }
-.cormorant-unicase-light {
-    font-family: "Cormorant Unicase", serif;
-    font-weight: 300;
-    font-style: normal;
-  }
-  
-  .cormorant-unicase-regular {
-    font-family: "Cormorant Unicase", serif;
-    font-weight: 400;
-    font-style: normal;
-  }
-  
-  .cormorant-unicase-medium {
-    font-family: "Cormorant Unicase", serif;
-    font-weight: 500;
-    font-style: normal;
-  }
-  
-  .cormorant-unicase-semibold {
-    font-family: "Cormorant Unicase", serif;
-    font-weight: 600;
-    font-style: normal;
-  }
-  
-  .cormorant-unicase-bold {
-    font-family: "Cormorant Unicase", serif;
-    font-weight: 700;
-    font-style: normal;
-  }
+
 *{
     margin: 0 auto;
     font-family: var(--main-font);
     box-sizing: border-box;
 }
-img{
-    position: relative;
-}
+
 h1{
     display: flex;
     justify-content: center;
@@ -51,18 +21,12 @@ h1{
     font-family: "Cormorant Unicase", serif;
     font-weight: 700;
 }
-.data, .weather{
-    display: flex;
-}
+
 h2{
     background-color: var(--secondary-color);
+    text-align: center;
 }
-ul{
- 
-}
-li{
-    list-style: none;
-}
+
 footer{
     display: grid;
     background-color: var(--primary-color);
@@ -72,4 +36,33 @@ footer{
 .hero img{
     width: 100%;
     height: auto;
+}
+.data div{
+    display: flex;
+}
+.data div span{
+    flex: 1;
+}
+.data div span:first-of-type{
+    text-align: right;
+    padding-right: 5px;
+}
+.data div span:last-of-type{
+    padding-left: 5px;
+}
+.weather div{
+    display: flex;
+}
+.weather div span{
+    flex: 1;
+}
+.weather div span:first-of-type{
+    text-align: right;
+    padding-right: 5px;
+}
+.weather div span:last-of-type{
+    padding-left: 5px;
+}
+.box img{
+    display: flex;
 }

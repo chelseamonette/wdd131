@@ -18,34 +18,34 @@
         <h1>Ireland</h1>
         <div class="hero">
             <picture>
-                <source srcset="images/ireland-castle-large.webp" media="min-width: 1000px" />
-                <source srcset="images/ireland-castle-medium.webp" media="min-width: 500px" />
-                <img src="images/ireland-cliff-small.webp" alt="Ireland castle at twilight" />
+                <source srcset="file:///C:\Users\chels\OneDrive\Desktop\wdd131\images\ireland-castle-large.webp" media="(min-width: 1000px)" >
+                <source srcset="file:///C:/Users/chels/Downloads/ireland-castle-medium.webp" media="min-width: 500px" >
+                <img src="images/ireland-cliff-small.webp" alt="Cliffs in Ireland" >
             </picture>
         </div>
-        <div class="data">
+        <section class="box">
             <h2>Data</h2>
-            <ul>
-                <li><strong>Area:</strong> 84,421 sq km</li>
-                <li><strong>Population:</strong> 7,185,600</li>
-                <li><strong>Capital:</strong> Dublin</li>
-                <li><strong>Languages:</strong> English, Irish, ISL, Ulster Scots, NISL, Shelta</li>
-                <li><strong>Currency:</strong> Euro</li>
-                <li><strong>Time Zone:</strong> Greenwich Mean Time (UTC+0)</li>
-                <li><strong>Calling Code:</strong> +353</li>
-                <li><strong>Internet TLD:</strong> .ie</li>
-            </ul>
-        </div>
-        <div class="weather">
-            <h2>Weather ⛅</h2>
-            <img>
-            <ul>
-                <li><strong>Temperature:</strong> 37ºF</li>
-                <li><strong>Conditions:</strong> Mostly Cloudy</li>
-                <li><strong>Wind:</strong> 8 mph</li>
-                <li><strong>Wind Chill:</strong> 6.2ºC</li>
-            </ul>
-        </div>
+            <div class="data">
+                <div><span><strong>Area:</strong></span> <span>84,421 sq km</span></div>
+                <div><span><strong>Population:</strong></span> <span>7,185,600</span></div>
+                <div><span><strong>Capital:</strong></span> <span>Dublin</span></div>
+                <div><span><strong>Languages:</strong></span> <span>English, Irish, ISL, Ulster Scots, NISL, Shelta</span></div>
+                <div><span><strong>Currency:</strong></span> <span>Euro</span></div>
+                <div><span><strong>Time Zone:</strong></span> <span>Greenwich Mean Time (UTC+0)</span></div>
+                <div><span><strong>Calling Code:</strong></span> <span>+353</span></div>
+                <div><span><strong>Internet TLD:</strong></span> <span>.ie</span></div>
+            </div>
+        </section>
+        <section class="box">
+            <h2>Weather</h2>
+            <img src="images/weather-icon.svg" alt="weather icon" height="50px">
+            <div class="weather">
+                <div><span><strong>Temperature:</strong></span> <span>37ºF</span></div>
+                <div><span><strong>Conditions:</strong></span> <span>Mostly Cloudy</span></div>
+                <div><span><strong>Wind:</strong></span> <span>8 mph</span></div>
+                <div><span><strong>Wind Chill:</strong></span> <span>43ºF</span></div>
+            </div>
+        </section>
     </main> 
     <footer>
         <p class="year">&copy;<span id="year"></span> 💛 Chelsea Monette 💛 Sparks, Nevada</p>
