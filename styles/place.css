@@ -52,22 +52,24 @@ h1{
     font-weight: 700;
 }
 .data, .weather{
-    position: absolute;
-    display: grid;
-    grid-template-columns: 5px 1fr 30px;
-    place-items: left;
+    display: flex;
 }
 h2{
     background-color: var(--secondary-color);
-    grid-column: 1 / 3;
 }
 ul{
-    grid-column: 2 / 4;
+ 
 }
 li{
     list-style: none;
 }
+footer{
+    display: grid;
+    background-color: var(--primary-color);
+    color: var(--accent-color);
+}
 
 .hero img{
     width: 100%;
-    height: aut
+    height: auto;
+}
