@@ -65,6 +65,3 @@ footer{
 .weather-box img{
     display: flex;
 }
-.weather-box h2 span{
-    display: none;
-}

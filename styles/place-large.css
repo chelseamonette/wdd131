@@ -23,8 +23,8 @@
     .weather-box img{
         display: none;
     }
-    .weather-box h2 span{
-        display: contents;
+    .weather-box h2::after{
+        content: "⛅";
     }
   
     
