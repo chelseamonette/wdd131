@@ -48,9 +48,7 @@ footer{
     text-align: right;
     padding-right: 5px;
 }
-.data div span:last-of-type{
-    padding-left: 5px;
-}
+
 .weather div{
     display: flex;
 }
@@ -62,7 +60,7 @@ footer{
     padding-right: 5px;
 }
 .weather div span:last-of-type{
-    padding-left: 5px;
+    text-align: left;
 }
 .weather-box img{
     display: flex;
