@@ -1,0 +1,12 @@
+@media (min-width: 37.5em){
+    nav{
+        flex-direction: row;
+    }
+    #menu {
+		display: none; /* hide hamburger button */
+	}
+
+    .navigation a{
+        display: flex;
+    }
+}

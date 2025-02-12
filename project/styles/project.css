@@ -1,0 +1,91 @@
+:root{
+    --heading-font: 'Enriqueta', serif, 600;
+    --primary-font: 'Enriqueta', serif;
+    --background-color: #EEEEEC;
+    --font-color: #6A4C9C;
+    --header-box-color: #D6A9F7;
+    --secondary-box-color: #3A8D99;
+    --blue-accent-color: #6EC1E4;
+    --green-accent-color: #A9D7C0;
+    --outline-color: #232077;
+}
+*{
+    margin: 0 auto;
+    padding: 5px;
+    font-family: var(--primary-font);
+    box-sizing: border-box;
+    background-color: var(--background-color);
+}
+h1, .header{
+    display: flex;
+    justify-content: center;
+    border-color: var(--secondary-box-color);
+    border: 1px, solid;
+    background-color: var(--font-color);
+    color: var(--background-color);
+}
+#hero{
+    width: 300px;
+    height: auto;
+    display: grid;
+}
+figure{
+    display: grid;
+    justify-content: center;
+}
+.site-name{
+    display: grid;
+    background-color: var(--blue-accent-color);
+    border-radius: 2%;
+    border: var(--secondary-box-color), solid;
+}
+.site-purpose{
+    display: grid;
+    padding: 10px;
+    background-color: var(--green-accent-color);
+    margin: 10px;
+    border: var(--secondary-box-color), solid;
+    border-radius: 2%;
+}
+.scenarios{
+    margin: 10px;
+    padding: 10px;
+    display: grid;
+    background-color: var(--blue-accent-color);
+    border: var(--secondary-box-color), solid;
+    border-radius: 2%;
+}
+.color-scheme img{
+    width: 300px;
+    height: auto;
+
+}
+.color-scheme{
+    margin: 10px;
+    padding: 5px;
+    background-color: var(--background-color);
+    border: var(--font-color), solid;
+    border-radius: 2%;
+}
+.typography{
+    margin: 10px;
+    padding: 5px;
+    display: grid;
+    border: var(--outline-color), solid;
+    border-radius: 2%;
+    background-color: var(--header-box-color);
+}
+#headings{
+    font-family: "Enriqueta", serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: x-large;
+}
+#body{
+    font-family: "Enriqueta", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.wireframe{
+    display: grid;
+}
