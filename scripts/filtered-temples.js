@@ -94,4 +94,33 @@ const temples = [
         imageUrl:
         "https://churchofjesuschristtemples.org/assets/img/temples/red-cliffs-utah-temple/red-cliffs-utah-temple-44639.jpg"
     }
-  ];vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+  ]
+const cardContainer = document.getElementById("temples");
+
+temples.forEach(temple => {
+  const section = document.createElement("section");
+
+  const h2 = document.createElement("h2");
+  h2.textContent = temple.templeName;
+
+  const location = document.createElement("p");
+  location.textContent = `Location: ${temple.location}`;
+
+  const dedicated = document.createElement("p");
+  dedicated.textContent = `Dedicated: ${temple.dedicated}`;
+
+  const area = document.createElement("p");
+  area.textContent = `Area: ${temple.area} sq ft`;
+
+  const img = document.createElement("img");
+  img.src = temple.imageUrl;
+  img.alt = `${temple.templeName} Temple`;
+
+  section.appendChild(h2);
+  section.appendChild(location);
+  section.appendChild(dedicated);
+  section.appendChild(area);
+  section.appendChild(img);
+
+  cardContainer.appendChild(section);
+});
