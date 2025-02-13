@@ -22,7 +22,7 @@ fieldset{
 }
 label{
   font-weight: 700;
-  display: ;
+  display: grid;
   justify-content: left;
 }
 
