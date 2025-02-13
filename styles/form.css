@@ -16,6 +16,15 @@ h1{
     background-color: var(--primary-color);
     display: grid;
 }
+fieldset{
+  display: grid;
+  justify-content: left;
+}
+label{
+  font-weight: 700;
+  display: ;
+  justify-content: left;
+}
 
 /* use reverse flexbox to take advantage of flex-direction: reverse */
 .star-rating {
