@@ -94,33 +94,70 @@ const temples = [
         imageUrl:
         "https://churchofjesuschristtemples.org/assets/img/temples/red-cliffs-utah-temple/red-cliffs-utah-temple-44639.jpg"
     }
-  ]
-const cardContainer = document.getElementById("temples");
+];
 
-temples.forEach(temple => {
-  const section = document.createElement("section");
+const oldLink = document.querySelector("#old");
 
-  const h2 = document.createElement("h2");
-  h2.textContent = temple.templeName;
-
-  const location = document.createElement("p");
-  location.textContent = `Location: ${temple.location}`;
-
-  const dedicated = document.createElement("p");
-  dedicated.textContent = `Dedicated: ${temple.dedicated}`;
-
-  const area = document.createElement("p");
-  area.textContent = `Area: ${temple.area} sq ft`;
-
-  const img = document.createElement("img");
-  img.src = temple.imageUrl;
-  img.alt = `${temple.templeName} Temple`;
-
-  section.appendChild(h2);
-  section.appendChild(location);
-  section.appendChild(dedicated);
-  section.appendChild(area);
-  section.appendChild(img);
-
-  cardContainer.appendChild(section);
+oldLink.addEventListener("click", () => {
+  const year = parseInt(temple.dedicated.split(",")[0]);
+  createTempleCard(year < 1900)
 });
+
+const newLink = document.querySelector("#new");
+
+newLink.addEventListener("click", () => {
+  const year = parseInt(temple.dedicated.split(",")[0]);
+  createTempleCard(year > 2000);
+});
+
+const largeLink = document.querySelector("#large");
+
+largeLink.addEventListener("click", () => {
+  createTempleCard(temple => temple.area > 90000);
+});
+
+const smallLink = document.querySelector("#small");
+
+smallLink.addEventListener("click", () => {
+  createTempleCard(temple => temple.area < 10000);
+});
+
+const homeLink = document.querySelector("#home");
+
+homeLink.addEventListener("click", () => {
+  createTempleCard(temples);
+});
+
+function createTempleCard(filteredTemples){
+  document.querySelector(".temples").innerHTML = '';
+  filteredTemples.forEach(temple => {
+    let card = document.createElement("section");
+
+    let name = document.createElement("h2");
+    name.textContent = temple.templeName;
+
+    let location = document.createElement("p");
+    location.innerHTML = `<span class="label">Location:</span> ${temple.location}`;
+
+    let dedicated = document.createElement("p");
+    dedicated.innerHTML = `<span class="label">Dedicated:</span> ${temple.dedicated}`;
+
+    let area = document.createElement("p");
+    area.innerHTML = `<span class="label">Area:</span> ${temple.area} sq ft`;
+
+    let img = document.createElement("img");
+    img.setAttribute("src", temple.imageUrl);
+    img.setAttribute("alt", `${temple.templeName} Temple`);
+    img.setAttribute("loading", "lazy");
+
+    card.appendChild(name);
+    card.appendChild(location);
+    card.appendChild(dedicated);
+    card.appendChild(area);
+    card.appendChild(img);
+
+    document.querySelector(".temples").appendChild(card);
+  });
+}
+
+createTempleCard(temples);
