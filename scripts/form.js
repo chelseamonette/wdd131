@@ -33,6 +33,13 @@ const products = [
     }
   ];
 
+function getProductName(){
 products.forEach(product => {
-    const productName = document.querySelector
+    let productNameOption = document.createElement("option");
+    productNameOption.setAttribute("value", product.name);
+    productNameOption.textContent = product.name;
+    document.querySelector(".name").appendChild(productNameOption);
+
 });
+}
+getProductName();
