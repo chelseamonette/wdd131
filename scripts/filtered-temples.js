@@ -99,27 +99,29 @@ const temples = [
 const oldLink = document.querySelector("#old");
 
 oldLink.addEventListener("click", () => {
-  const year = parseInt(temple.dedicated.split(",")[0]);
-  createTempleCard(year < 1900)
+  const oldYear = temples.filter((temple) => parseInt(temple.dedicated.split(",")[0]) < 1900);
+  createTempleCard(oldYear);
 });
 
 const newLink = document.querySelector("#new");
 
 newLink.addEventListener("click", () => {
-  const year = parseInt(temple.dedicated.split(",")[0]);
-  createTempleCard(year > 2000);
+  const newYear = temples.filter((temple) => parseInt(temple.dedicated.split(",")[0]) > 2000);
+  createTempleCard(newYear);
 });
 
 const largeLink = document.querySelector("#large");
 
 largeLink.addEventListener("click", () => {
-  createTempleCard(temple => temple.area > 90000);
+  const large = temples.filter((temple) => temple.area > 90000);
+  createTempleCard(large);
 });
 
 const smallLink = document.querySelector("#small");
 
 smallLink.addEventListener("click", () => {
-  createTempleCard(temple => temple.area < 10000);
+  const small = temples.filter((temple) => temple.area < 10000);
+  createTempleCard(small);
 });
 
 const homeLink = document.querySelector("#home");
@@ -129,7 +131,7 @@ homeLink.addEventListener("click", () => {
 });
 
 function createTempleCard(filteredTemples){
-  document.querySelector(".temples").innerHTML = '';
+  document.querySelector(".temples").innerHTML = "";
   filteredTemples.forEach(temple => {
     let card = document.createElement("section");
 
