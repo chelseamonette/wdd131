@@ -25,7 +25,9 @@ label{
   display: grid;
   justify-content: left;
 }
-
+.optional{
+  color: var(--primary-color);
+}
 /* use reverse flexbox to take advantage of flex-direction: reverse */
 .star-rating {
     display: flex;
