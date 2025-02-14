@@ -82,3 +82,32 @@ footer{
     background-color: var(--primary-color);
     color: var(--accent-color2);
 }
+
+.wf1 fieldset{
+  margin: 2rem 0;
+  border: 1px solid var(--primary-color);
+  border-radius: 6px;
+  padding: .5rem 2%;
+}
+
+.wf1 label{
+  display: block;
+  padding-top: 1rem;
+  color: var(--primary-color);
+  font-size: .9rem;
+
+}
+.wf1 div {
+  padding-top: 1rem;
+  color: var(--secondary-color);
+  font-size: .9rem;
+}
+.wf1 select,
+.wf1 intput[type="radio"],
+.wf1 intput[type="date"],
+.wf1 intput[type="checkbox"],
+.wf1 textarea,
+.wf1 intput[type="text"]{
+  display: block;
+  border: solid 1px;
+}

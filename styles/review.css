@@ -1,0 +1,18 @@
+:root{
+    --main-font: "Ovo", serif;
+    --primary-color: #7D4F50;
+    --secondary-color: #CC8B86;
+    --accent-color1: #D1BE9C;
+    --accent-color2: #F9EAE1;
+    --accent-color3: #AA998F;
+}
+*{
+    margin: 0 auto;
+    padding: 5px;
+    font-family: var(--main-font);
+    box-sizing: border-box;
+}
+h1{
+    background-color: var(--primary-color);
+    display: grid;
+}
