@@ -44,4 +44,3 @@ products.forEach(product => {
 }
 getProductName();
 
-function getProductValue(){}
